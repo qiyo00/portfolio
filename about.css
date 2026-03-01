@@ -1,0 +1,186 @@
+/* ═══════════════════════════════════════════
+   ABOUT PAGE
+═══════════════════════════════════════════ */
+
+/* Header always dark on this page */
+.about-page #site-header .nav-logo a,
+.about-page #site-header .nav-name,
+.about-page #site-header .nav-item { color: var(--ink-mid); }
+.about-page #site-header .nav-item:hover { color: var(--ink); }
+.about-page #site-header .nav-item.active { color: var(--accent); }
+.about-page #site-header .nav-toggle span { background: var(--ink); }
+
+/* ── PAGE HEADER ── */
+.page-header {
+  padding: calc(var(--header-h) + 4rem) 4rem 3rem;
+  border-bottom: 1px solid var(--ink-faint);
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-top: 0.8rem;
+}
+
+/* ── MAIN LAYOUT ── */
+.about-main { padding: 5rem 4rem 7rem; }
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+/* ── LEFT: PHOTO ── */
+.about-photo { position: sticky; top: calc(var(--header-h) + 2rem); }
+
+.photo-frame {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--ink-faint);
+  margin-bottom: 1.8rem;
+}
+
+.photo-frame img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+.photo-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(145deg, #d4cfc7, #c2bdb5);
+}
+
+.photo-placeholder span {
+  font-family: var(--font-mono);
+  font-size: 0.6rem; letter-spacing: 0.15em;
+  color: rgba(26,26,24,0.3);
+}
+
+/* Contact lines under photo */
+.photo-contact {
+  display: flex; flex-direction: column; gap: 0;
+  border-top: 1px solid var(--ink-faint);
+}
+
+.contact-line {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--ink-faint);
+  font-size: 0.82rem; font-weight: 300;
+  color: var(--ink-mid);
+  transition: color 0.2s;
+  gap: 1rem;
+}
+
+.contact-line:hover { color: var(--accent); }
+
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-faint);
+  flex-shrink: 0;
+}
+
+/* ── RIGHT: CONTENT ── */
+.about-content {
+  display: flex; flex-direction: column; gap: 4rem;
+}
+
+.about-block { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.about-lead {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 300;
+  line-height: 1.45;
+  color: var(--ink);
+  border-left: 3px solid var(--accent);
+  padding-left: 1.2rem;
+  font-style: italic;
+}
+
+.about-body {
+  font-size: 0.97rem; font-weight: 300;
+  line-height: 1.9; color: var(--ink-mid);
+  max-width: 55ch;
+}
+
+/* ── SKILLS GRID ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.skill-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-mid);
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--ink-faint);
+}
+
+.skill-list {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 0;
+}
+
+.skill-list li {
+  font-size: 0.9rem; font-weight: 300;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--ink-faint);
+  color: var(--ink);
+  display: flex; align-items: center; gap: 0.5rem;
+}
+
+.skill-list li::before {
+  content: '–';
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+/* ── CTA ── */
+.about-cta {
+  display: inline-flex; align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  padding: 1rem 2rem;
+  transition: opacity 0.25s;
+  align-self: flex-start;
+}
+.about-cta:hover { opacity: 0.82; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .about-main { padding: 4rem 2rem 6rem; }
+  .about-layout {
+    grid-template-columns: 260px 1fr;
+    gap: 4rem;
+  }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: calc(var(--header-h) + 3rem) 2rem 2.5rem; }
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-photo { position: static; }
+  .photo-frame { max-width: 320px; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}

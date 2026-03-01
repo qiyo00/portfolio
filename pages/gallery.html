@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=DM+Mono:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../gallery.css">
+</head>
+
+<body class="gallery-page">
+
+    <!-- ══ NAV (same as index) ══ -->
+    <header id="site-header">
+        <div class="nav-logo">
+            <a href="../index.html">Q</a>
+            <span class="nav-name">ingyue Guo</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html" class="nav-item">Home</a>
+            <a href="gallery.html" class="nav-item active">Gallery</a>
+            <div class="nav-dropdown">
+                <button class="nav-item dropdown-trigger" aria-expanded="false">
+                    Case Study <span class="dropdown-arrow">▾</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="process.html" class="dropdown-item">Comic</a>
+                    <a href="gallery.html" class="dropdown-item">Infographic</a>
+                    <a href="process.html" class="dropdown-item">Portrait</a>
+                    <a href="process.html" class="dropdown-item">Journal Cover</a>
+                </div>
+            </div>
+            <a href="about.html" class="nav-item">About</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <!-- ══ PAGE HEADER ══ -->
+    <section class="page-header">
+        <div class="page-header-inner">
+            <p class="hero-eyebrow">Biomedical Illustration · Infographic · 3D · Data Visualization</p>
+            <h1 class="page-title">Gallery</h1>
+        </div>
+    </section>
+
+    <!-- ══ GALLERY GRID ══ -->
+    <section class="gallery-page-section">
+        <div class="gallery-grid">
+
+            <!--
+        HOW TO USE:
+        - Add data-casestudy="process-hepatic.html" → clicking jumps to that page
+        - No data-casestudy attribute → clicking opens lightbox
+        - Replace <div class="card-placeholder" data-n="01"> with <img src="images/..." alt="...">
+      -->
+
+            <!-- 01 — has case study -->
+            <article class="gallery-card reveal" data-casestudy="process-hepatic.html">
+                <div class="card-image">
+                    <div class="card-placeholder" data-n="01"></div>
+                    <!-- <img src="images/hepatic-veins.jpg" alt="Drainage of Blood from Hepatic Veins"> -->
+                </div>
+                <div class="card-overlay">
+                    <span class="card-type">Illustration</span>
+                    <h3 class="card-title">Drainage of Blood from Hepatic Veins</h3>
+                    <span class="card-link">View case study →</span>
+                </div>
+            </article>
+
+            <!-- 02 — has case study -->
+            <article class="gallery-card reveal" data-casestudy="process-blood.html">
+                <div class="card-image">
+                    <div class="card-placeholder" data-n="02"></div>
+                    <!-- <img src="images/bloodstain.jpg" alt="Bloodstain Pattern Analysis"> -->
+                </div>
+                <div class="card-overlay">
+                    <span class="card-type">Infographic</span>
+                    <h3 class="card-title">Bloodstain Pattern Analysis</h3>
+                    <span class="card-link">View case study →</span>
+                </div>
+            </article>
+
+            <!-- 03 — has case study -->
+            <article class="gallery-card reveal" data-casestudy="process-synthesis.html">
+                <div class="card-image">
+                    <div class="card-placeholder" data-n="03"></div>
+                    <!-- <img src="images/synthesis.jpg" alt="Accelerated Synthesis"> -->
+                </div>
+                <div class="card-overlay">
+                    <span class="card-type">3D Modelling</span>
+                    <h3 class="card-title">Accelerated Synthesis</h3>
+                    <span class="card-link">View case study →</span>
+                </div>
+            </article>
+
+            <!-- 04 — lightbox only -->
+            <article class="gallery-card reveal" data-lightbox="images/facial-muscles.jpg"
+                data-caption="Muscles of Facial Expression · Illustration">
+                <div class="card-image">
+                    <div class="card-placeholder" data-n="04"></div>
+                    <!-- <img src="images/facial-muscles.jpg" alt="Muscles of Facial Expression"> -->
+                </div>
+                <div class="card-overlay">
+                    <span class="card-type">Illustration</span>
+                    <h3 class="card-title">Muscles of Facial Expression</h3>
+                    <span class="card-link">View image →</span>
+                </div>
+            </article>
+
+            <!-- 05 — lightbox only -->
+            <article class="gallery-card reveal" data-lightbox="images/measles.jpg"
+                data-caption="Tracking Measles · Data Visualization">
+                <div class="card-image">
+                    <div class="card-placeholder" data-n="05"></div>
+                    <!-- <img src="images/measles.jpg" alt="Tracking Measles"> -->
+                </div>
+                <div class="card-overlay">
+                    <span class="card-type">Data Visualization</span>
+                    <h3 class="card-title">Tracking Measles</h3>
+                    <span class="card-link">View image →</span>
+                </div>
+            </article>
+
+            <!-- 06 — lightbox only -->
+            <article class="gallery-card reveal" data-lightbox="images/skull.jpg"
+                data-caption="Lateral View of Human Skull · Illustration">
+                <div class="card-image">
+                    <div class="card-placeholder" data-n="06"></div>
+                    <!-- <img src="images/skull.jpg" alt="Lateral View of Human Skull"> -->
+                </div>
+                <div class="card-overlay">
+                    <span class="card-type">Illustration</span>
+                    <h3 class="card-title">Lateral View of Human Skull</h3>
+                    <span class="card-link">View image →</span>
+                </div>
+            </article>
+
+            <!-- 07 — lightbox only -->
+            <article class="gallery-card reveal" data-lightbox="images/hand.jpg"
+                data-caption="Dorsum of the Hand · Vector Illustration">
+                <div class="card-image">
+                    <div class="card-placeholder" data-n="07"></div>
+                    <!-- <img src="images/hand.jpg" alt="Dorsum of the Hand"> -->
+                </div>
+                <div class="card-overlay">
+                    <span class="card-type">Illustration</span>
+                    <h3 class="card-title">Dorsum of the Hand</h3>
+                    <span class="card-link">View image →</span>
+                </div>
+            </article>
+
+            <!-- Add more cards following the same pattern -->
+
+        </div>
+    </section>
+
+    <!-- ══ LIGHTBOX ══ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <div class="footer-label">Navigation</div>
+                <nav class="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About</a>
+                    <a href="about.html">Shiyin Studio</a>
+                </nav>
+            </div>
+            <div class="footer-col">
+                <div class="footer-label">Contact</div>
+                <a href="mailto:qingyueguo00@gmail.com" class="footer-email">qingyueguo00@gmail.com</a>
+            </div>
+            <div class="footer-col">
+                <div class="footer-label">Socials</div>
+                <div class="footer-socials">
+                    <a href="https:www.linkedin.com/in/qingyue-guo" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/qiy_o_0/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Qingyue Guo. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../gallery.js"></script>
+</body>
+
+</html>
