@@ -911,6 +911,7 @@ button.card-link {
     position: fixed;
     inset: 0;
     top: var(--header-h);
+    height: calc(100vh - var(--header-h));
     background: var(--paper);
     padding: 3rem 2rem;
     gap: 1.8rem;

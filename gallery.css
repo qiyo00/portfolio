@@ -116,6 +116,57 @@
   color: var(--accent);
 }
 
+/* ── LIGHTBOX 导航箭头 ── */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
+  line-height: 1;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.lightbox-prev { left: 1.5rem; }
+.lightbox-next { right: 1.5rem; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── 底部小圆点 ── */
+.lightbox-dots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+.lightbox-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lightbox-dot.active {
+  background: rgba(255, 255, 255, 0.8);
+}
+
 /* Prevent body scroll when lightbox open */
 body.lightbox-open {
   overflow: hidden;
