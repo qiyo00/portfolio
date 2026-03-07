@@ -99,8 +99,8 @@
   right: 1.5rem;
   z-index: 2;
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.6);
+  border: none
+  color: rgba(255, 255, 255, 0.55);
   font-size: 0.9rem;
   width: 36px;
   height: 36px;
@@ -108,12 +108,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition: color 0.2s;
 }
 
 .lightbox-close:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  color: #fff;
 }
 
 /* ── LIGHTBOX 导航箭头 ── */

@@ -30,9 +30,9 @@
                     Case Study <span class="dropdown-arrow">▾</span>
                 </button>
                 <div class="dropdown-menu">
-                    <a href="gallery.html" class="dropdown-item">Infographic</a>
-                    <a href="process.html" class="dropdown-item">Portrait</a>
-                    <a href="process.html" class="dropdown-item">Journal Cover</a>
+                    <a href="case1.html" class="dropdown-item">Neuroanatomical Portrait</a>
+                    <a href="case2.html" class="dropdown-item">Infographic - Molvis</a>
+                    <a href="case3.html" class="dropdown-item">Journal Cover</a>
                 </div>
             </div>
             <a href="about.html" class="nav-item">About</a>
@@ -54,7 +54,7 @@
         <div class="gallery-grid">
 
             <!-- 01 — has case study -->
-            <article class="gallery-card reveal">
+            <article class="gallery-card reveal" data-casestudy="case1.html">
                 <div class="card-image">
                     <img src="../images/Portrait/portrait_card.png" alt="Portrait with brain in situ">
                 </div>
@@ -66,7 +66,7 @@
             </article>
 
             <!-- 02 — has case study -->
-            <article class="gallery-card reveal">
+            <article class="gallery-card reveal" data-casestudy="case2.html">
                 <div class="card-image">
                     <img src="../images/Molviz/molviz.jpg" alt="molviz">
                 </div>
@@ -78,7 +78,7 @@
             </article>
 
             <!-- 03 — has case study -->
-            <article class="gallery-card reveal">
+            <article class="gallery-card reveal" data-casestudy="case3.html">
                 <div class="card-image">
                     <img src="../images/Journal_Cover_card.png" alt="Journal Cover">
                 </div>
@@ -142,10 +142,10 @@
             </article>
 
             <!-- 08 — lightbox only -->
-            <article class="gallery-card reveal" data-lightbox="../images/BPA.png"
+            <article class="gallery-card reveal" data-lightbox="../images/BPA.jpg"
                 data-lightbox-title="Bloodstain Pattern Analysis">
                 <div class="card-image">
-                    <img src="../images/BPA_card.png" alt="BPA">
+                    <img src="../images/BPA_card.jpg" alt="BPA">
                 </div>
                 <div class="card-overlay">
                     <span class="card-type">Infographic</span>
@@ -155,14 +155,15 @@
             </article>
 
             <!-- 09 — lightbox only -->
-            <article class="gallery-card reveal" data-lightbox="../images/surgical.jpg"
-                data-lightbox-title="Surgical Illustration: Ileosigmoid Anastomosis">
+            <article class="gallery-card reveal"
+                data-lightbox="../images/editorial1.jpg|../images/editorial2.jpg|../images/editorial3.jpg"
+                data-lightbox-title="Spread1|Spread2|Spread3">
                 <div class="card-image">
-                    <img src="../images/surgical_card.jpg" alt="Surgical Illustration">
+                    <img src="../images/Editorial.jpg" alt="banners">
                 </div>
                 <div class="card-overlay">
-                    <span class="card-type">Surgical Illustration</span>
-                    <h3 class="card-title">Ileosigmoid Anastomosis</h3>
+                    <span class="card-type">Editorials</span>
+                    <h3 class="card-title">Banner Illustration & Magazine Spreads</h3>
                     <button class="card-link">View image →</button>
                 </div>
             </article>
@@ -194,15 +195,14 @@
             </article>
 
             <!-- 12 — lightbox only -->
-            <article class="gallery-card reveal"
-                data-lightbox="../images/editorial1.png|../images/editorial2.png|../images/editorial3.png"
-                data-lightbox-title="Banner Illustration & Layout of Magazine Spreads">
+            <article class="gallery-card reveal" data-lightbox="../images/surgical.jpg"
+                data-lightbox-title="Surgical Illustration: Ileosigmoid Anastomosis">
                 <div class="card-image">
-                    <img src="../images/Editorial.jpg" alt="banners">
+                    <img src="../images/surgical_card.jpg" alt="Surgical Illustration">
                 </div>
                 <div class="card-overlay">
-                    <span class="card-type">Editorials</span>
-                    <h3 class="card-title">Banner Illustration & Layout of Magazine Spreads</h3>
+                    <span class="card-type">Surgical Illustration</span>
+                    <h3 class="card-title">Ileosigmoid Anastomosis</h3>
                     <button class="card-link">View image →</button>
                 </div>
             </article>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study — Qingyue Guo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=DM+Mono:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../casestudy.css">
+</head>
+
+<body class="casestudy-page">
+
+  <!-- ══ NAV ══ -->
+  <header id="site-header" class="scrolled">
+    <div class="nav-logo">
+      <a href="../index.html">Q</a>
+      <span class="nav-name">ingyue Guo</span>
+    </div>
+    <nav class="nav-links">
+      <a href="../index.html" class="nav-item">Home</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <div class="nav-dropdown">
+        <button class="nav-item dropdown-trigger active" aria-expanded="false">
+          Case Study <span class="dropdown-arrow">▾</span>
+        </button>
+        <div class="dropdown-menu">
+          <a href="case1.html" class="dropdown-item">Neuroanatomical Portrait</a>
+          <a href="case2.html" class="dropdown-item">Infographic - Molvis</a>
+          <a href="case3.html" class="dropdown-item">Journal Cover</a>
+        </div>
+      </div>
+      <a href="about.html" class="nav-item">About</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ══ PROJECT HERO ══ -->
+  <section class="cs-hero">
+    <!--
+      Option A: full-width final artwork as hero background
+    -->
+    <div class="cs-hero-image">
+      <img src="../images/Molviz/render_scene.jpg" alt="final">
+      <div class="cs-hero-overlay"></div>
+    </div>
+    <div class="cs-hero-content">
+      <a href="gallery.html" class="cs-back">← Back to Gallery</a>
+      <div class="cs-meta-row">
+        <span class="cs-tag">Infographic</span>
+        <span class="cs-tag">Molecular visualization</span>
+        <span class="cs-tag">Antibiotics</span>
+        <span class="cs-tag">Microbiology</span>
+      </div>
+      <h1 class="cs-title">Bacterial cell wall & antibiotics</h1>
+    </div>
+  </section>
+
+  <!-- ══ PROJECT OVERVIEW ══ -->
+  <section class="cs-section cs-overview">
+    <div class="cs-container">
+      <div class="cs-overview-grid reveal">
+        <div class="cs-overview-main">
+          <div class="section-label">Overview</div>
+          <p class="cs-lead">
+            This infographic illustrates the molecular mechanism of how &beta;-lactam antibiotics inhibit
+            bacterial cell wall synthesis in <i>Staphylococcus aureus</i>, ultimately leading to cell lysis through
+            osmotic
+            pressure.
+          </p>
+          <p class="about-body">
+            This work aims to explain what antibiotics such as penicillin are, and how they attack bacterial cell wall
+            synthesis.
+
+          </p>
+        </div>
+        <div class="cs-overview-aside">
+          <div class="cs-detail">
+            <span class="cs-detail-label">Type</span>
+            <span class="cs-detail-value">Molecular visualization</span>
+          </div>
+          <div class="cs-detail">
+            <span class="cs-detail-label">Audience</span>
+            <span class="cs-detail-value">Lay audience with some science background</span>
+          </div>
+          <div class="cs-detail">
+            <span class="cs-detail-label">Tools</span>
+            <span class="cs-detail-value">Adobe Illustrator<br>Autodesk Maya<br>VMD, ChimeraX</span>
+          </div>
+          <div class="cs-detail">
+            <span class="cs-detail-label">Year</span>
+            <span class="cs-detail-value">2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROCESS ══ -->
+  <section class="cs-section cs-process">
+    <div class="cs-container">
+      <div class="section-label reveal">Process</div>
+
+      <!-- Step 1: left text, 2 images -->
+      <div class="cs-step cs-step--full reveal">
+        <div class="cs-step-image">
+          <img src="../images/Molviz/process1.png" alt="References">
+        </div>
+        <div class="cs-step-caption">
+          <span class="cs-step-num">01</span>
+          <h3 class="cs-step-title">Research & Model Refinements</h3>
+          <p class="cs-step-body">
+            <li>Penicillin-binding proteins (PBP) and <i>S. aureus</i> cell wall data were sourced from the Protein Data
+              Bank (PDB). A specific PBP of <i>S. aureus</i> is selected based on UniProt documentation.</li>
+            <li>Antibiotic structures were obtained from PubChem.</li>
+            <li>Extra molecules, such as water and ions, were deleted to isolate the target structures. And missing structures (7
+              residues) of the PBP were added via prediction in ChimeraX, while VMD was used to adjust
+              structural representations for clarity.</li>
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2: full width image -->
+      <div class="cs-step cs-step--split reveal">
+        <div class="cs-step-image">
+          <img src="../images/Molviz/process2.png" alt="Sketch">
+        </div>
+        <div class="cs-step-text">
+          <span class="cs-step-num">02</span>
+          <h3 class="cs-step-title">Ideation & Initial Sketches</h3>
+          <p class="cs-step-body">
+            The workflow began with the creation of multiple thumbnails to explore composition.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3: right text, left image -->
+      <div class="cs-step cs-step--split cs-step--reverse reveal">
+        <div class="cs-step-image">
+          <img src="../images/Molviz/process3.jpg" alt="RefinedSketch">
+          </div>
+        <div class="cs-step-text">
+          <span class="cs-step-num">03</span>
+          <h3 class="cs-step-title">Refined Sketch</h3>
+          <p class="cs-step-body">
+            These initial ideas were developed into a single refined sketch. Asset list was created based on this draft.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 4: full width image -->
+      <div class="cs-step cs-step--full reveal">
+        <div class="cs-step-image">
+          <img src="../images/Molviz/process4.png" alt="Assets">
+        </div>
+        <div class="cs-step-caption">
+          <span class="cs-step-num">04</span>
+          <h3 class="cs-step-title">Asset Creation</h3>
+          <p class="cs-step-body">
+            3D models were textured and rendered in Autodesk Maya alongside 2D vector illustrations in Adobe
+            Illustrator.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 5: left text, right image -->
+      <div class="cs-step cs-step--split reveal">
+        <div class="cs-step-image">
+          <img src="../images/Molviz/render_scene.jpg" alt="Layout">
+        </div>
+        <div class="cs-step-image">
+          <img src="../images/Molviz/layout.png" alt="Layout">
+        </div>
+        <div class="cs-step-text">
+          <span class="cs-step-num">05</span>
+          <h3 class="cs-step-title">Final Layout</h3>
+          <p class="cs-step-body">
+            The final composition and typography were assembled in Illustrator.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FINAL ARTWORK ══ -->
+  <section class="cs-section cs-final">
+    <div class="cs-container">
+      <div class="section-label reveal">Final Work</div>
+      <div class="cs-final-image reveal">
+        <img src="../images/Molviz/molviz.jpg" alt="final">
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NEXT PROJECT ══ -->
+  <section class="cs-next reveal">
+    <a href="case1.html" class="cs-next-inner cs-prev-inner">
+      <span class="cs-next-label">Previous</span>
+      <span class="cs-next-title">← Neuroanatomical Portrait</span>
+    </a>
+    <a href="case3.html" class="cs-next-inner">
+      <span class="cs-next-label">Next</span>
+      <span class="cs-next-title">Journal Cover →</span>
+    </a>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-label">Navigation</div>
+        <nav class="footer-nav">
+          <a href="../index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="footer-label">Contact</div>
+        <a href="mailto:qingyueguo00@gmail.com" class="footer-email">qingyueguo00@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-label">Socials</div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/qingyue-guo" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/qiy_o_0/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Qingyue Guo. All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

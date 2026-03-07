@@ -79,10 +79,15 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => { lbImg.src = ''; }, 350);
   }
 
-  // Open on card click (cards with data-lightbox attribute)
-  document.querySelectorAll('.gallery-card[data-lightbox]').forEach(card => {
-    card.addEventListener('click', () => {
-      openLightbox(card.dataset.lightbox, card.dataset.lightboxTitle);
+  // Open on card click (cards with data-lightbox attribute) or open case study if data-casestudy exists
+  document.querySelectorAll('.gallery-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;
+      if (card.dataset.casestudy) {
+        window.location.href = card.dataset.casestudy;
+      } else if (card.dataset.lightbox) {
+        openLightbox(card.dataset.lightbox, card.dataset.lightboxTitle);
+      }
     });
   });
 
