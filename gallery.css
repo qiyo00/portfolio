@@ -29,6 +29,11 @@
   padding: 3rem 4rem 6rem;
 }
 
+.studio-section {
+  border-top: 1px solid var(--ink-faint);
+  padding-top: 4rem;
+}
+
 /* Cursor pointer on all cards */
 .gallery-card {
   cursor: pointer;
